@@ -199,6 +199,7 @@ class TimeGridHeader extends React.Component {
             longPressThreshold={this.props.longPressThreshold}
             onDeleteAlldayEvent={this.props.onDeleteAlldayEvent}
             labelTranslate={this.props.labelTranslate}
+            label={this.props.label}
           />
         </div>
       </div>

@@ -70,6 +70,7 @@ export default {
         slotEnd={end}
         eventComponent={eventComponent}
         onDeleteAlldayEvent={props.onDeleteAlldayEvent}
+        label={props.label}
       />
     )
   },
