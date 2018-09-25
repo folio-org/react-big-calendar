@@ -188,6 +188,7 @@ class DateContentRow extends React.Component {
           cellWrapperComponent={dateCellWrapperComponent}
           longPressThreshold={longPressThreshold}
           labelTranslate={this.props.labelTranslate}
+          label={this.props.label}
         />
 
         <div className="rbc-row-content">
