@@ -96,7 +96,7 @@ class EventCell extends React.Component {
     if (this.props.label === null || this.props.label === undefined) {
       header = <div><FormattedTime value={start} /> - <FormattedTime value={end} /></div>;
     }
-
+    let color = '#3174ad';
     let content;
     if (this.props.label === null || this.props.label === undefined) {
       content = <IconButton
@@ -106,14 +106,15 @@ class EventCell extends React.Component {
         onClick={() => { this.props.onDeleteAlldayEvent(event); }}
       />;
     } else if (this.props.label !== null) {
-      content = this.props.label;
+      content = title;
+      color = 'white';
     }
 
 
     return (
       <EventWrapper {...wrapperProps} isRow>
         <div
-          style={{ ...props.style, ...style }}
+          style={{ ...props.style, ...style, backgroundColor: color }}
           className={cn('rbc-event', className, xClassName, {
             'rbc-selected': selected,
             'rbc-event-allday': isAllDayEvent,
