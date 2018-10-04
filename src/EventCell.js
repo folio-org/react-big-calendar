@@ -107,7 +107,7 @@ class EventCell extends React.Component {
       />;
     } else if (this.props.label !== null) {
       content = title;
-      color = 'white';
+      color = '#fcfcfc';
     }
 
 
