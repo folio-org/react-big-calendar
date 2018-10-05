@@ -71,6 +71,7 @@ export default {
         eventComponent={eventComponent}
         onDeleteAlldayEvent={props.onDeleteAlldayEvent}
         label={props.label}
+        getEvent={props.getEvent}
       />
     )
   },
