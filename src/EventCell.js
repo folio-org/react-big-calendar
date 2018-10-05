@@ -131,14 +131,14 @@ class EventCell extends React.Component {
                 <div className="rbc-allday-event-content">
                   {header}
                 </div>
-                <div >
-                  {content}
+                <div>
+                  <div onClick={() => { this.props.getEvent(event); }} >
+                    {content}
+                  </div>
                 </div>
               </div>)
             }
           </div>
-
-
         </div>
       </EventWrapper>
     );

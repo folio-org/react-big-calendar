@@ -147,6 +147,7 @@ export default class TimeGrid extends Component {
       end: slots[slots.length - 1],
       action: slotInfo.action,
     })
+
   }
 
   renderEvents(range, events, today, resources) {
@@ -281,6 +282,7 @@ export default class TimeGrid extends Component {
           onDeleteAlldayEvent={this.props.onDeleteAlldayEvent}
           labelTranslate={this.props.labelTranslate}
           label={this.props.label}
+          getEvent={this.props.getEvent}
         />
         <div ref={(ref) => { this.content = ref; }} className="rbc-time-content">
           <TimeGutter
