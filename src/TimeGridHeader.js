@@ -200,6 +200,7 @@ class TimeGridHeader extends React.Component {
             onDeleteAlldayEvent={this.props.onDeleteAlldayEvent}
             labelTranslate={this.props.labelTranslate}
             label={this.props.label}
+            getEvent={this.props.getEvent}
           />
         </div>
       </div>

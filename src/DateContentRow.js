@@ -189,6 +189,7 @@ class DateContentRow extends React.Component {
           longPressThreshold={longPressThreshold}
           labelTranslate={this.props.labelTranslate}
           label={this.props.label}
+          getEvent={this.props.getEvent}
         />
 
         <div className="rbc-row-content">
