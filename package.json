@@ -41,7 +41,7 @@
     "release": "release",
     "prettier": "prettier '**/*js' !examples/bundle.js '!lib/**' --write ",
     "precommit": "lint-staged",
-    "postinstall": "yarn build"
+    "prepublish": "yarn build"
   },
   "lint-staged": {
     "src/**/*.js": "eslint",
